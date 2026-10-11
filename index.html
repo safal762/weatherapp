@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div class="cointainer">
+        <div  id="start">
+            <div id="logo">
+                <img src="resources/logo-removebg-preview.png" alt="weather-app">
+            </div>
+            <div id="description">
+                <h1>weather</h1>
+                <span>ForeCast</span>
+
+            </div>
+            <div class="buttons">
+                <button>Get Start</button>
+            </div>
+        </div>
+        <div id="weather" class="screen">
+            <div id="search">
+                <input type="text" placeholder="search city" id="searchCity">
+                <i class="ri-search-line" id="searchButton"></i>
+            </div>
+            <div id="image">
+                <img src="resources/clear.png" alt="sunny" id="weatherImage">
+            </div>
+
+            <div id="des">
+                <p id="currentCondition">description</p>
+                <span id="temprature">0°C</span>
+                <span id="city">City</span>
+            </div>
+            <div id="others">
+                <div id="wind">
+                    <i class="ri-windy-line"></i>
+                    <span id="windSpeed">0km/h</span>
+                    <p>wind</p>
+                </div>
+                <div id="humidity">
+                    <i class="ri-water-percent-line"></i>
+                    <span id="humidityperc">0%</span>
+                    <p>humidity</p>
+                </div>
+            </div>
+        </div>
+        <div id="error" class="screen">
+         <div class="show-error">
+               <h1>404</h1>
+            <p>Oops! Page Not Found</p>
+            <p>The page you're looking for doesn't exist or has been moved.</p>
+         </div>
+         <div class="home">
+            <button>Go Home</button>
+         </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
